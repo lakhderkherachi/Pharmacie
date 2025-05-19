@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pharmacy - Login</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/darkmode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+       <a href="index.html"><div class="logo">
+          <img src="./img/header.ico" alt="Website Logo" class="logo-image">Pharmacy
+        </div></a>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                 <li><a href="download.html">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i> <!-- Moon icon for dark mode -->
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Section -->
+    <section class="auth-section">
+        <div class="auth-container">
+            <h2 class="fade-in">Welcome Back</h2>
+            <p class="auth-subtitle">Sign in to manage your pharmacy with ease.</p>
+            <form id="login-form" onsubmit="handleLogin(event)">
+                <div class="input-group">
+                    <label for="login-email">Email:</label>
+                    <input type="email" id="login-email" required>
+                </div>
+                <div class="input-group">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit" class="form-button slide-up">Login</button>
+                <p class="auth-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
+                <a href="#" class="forgot-password">Forgot Password?</a>
+            </form>
+        </div>
+    </section>
+
+      <!-- Terms of Service Modal -->
+      <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeTermsModal()">×</span>
+            <h2 class="modal-title">Terms of Service</h2>
+            <div class="modal-text">
+                <p>Welcome to pharmacy! By using our services, you agree to comply with the following terms:</p>
+                <ul>
+                    <li><strong>Use of Service:</strong> You must use pharmacy for lawful purposes only.</li>
+                    <li><strong>Account Responsibility:</strong> You are responsible for maintaining the confidentiality of your account.</li>
+                    <li><strong>Termination:</strong> We reserve the right to terminate your access if you violate these terms.</li>
+                    <li><strong>Liability:</strong> pharmacy is not liable for any damages resulting from the use of our services.</li>
+                </ul>
+                <p>Last updated: May 6, 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePrivacyModal()">×</span>
+            <h2 class="modal-title">Privacy Policy</h2>
+            <div class="modal-text">
+                <p>At pharmacy, we value your privacy. Here's how we handle your data:</p>
+                <ul>
+                    <li><strong>Data Collection:</strong> We collect your email, name, and usage data to provide our services.</li>
+                    <li><strong>Data Use:</strong> Your data is used to improve our services and communicate with you.</li>
+                    <li><strong>Data Sharing:</strong> We do not share your data with third parties except as required by law.</li>
+                    <li><strong>Security:</strong> We use encryption to protect your data from unauthorized access.</li>
+                </ul>
+                <p>Last updated: May 6, 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 pharmacy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" onclick="showPrivacyModal()" class="footer-link" data-tooltip="Learn how we protect your data!">Privacy Policy</a>
+            <a href="#" onclick="showTermsModal()" class="footer-link" data-tooltip="Understand our rules!">Terms of Service</a>
+            <a href="mailto:l-kherachi@univ-dbkm.dz?subject=Contact%20Us%20-%20pharmacy&body=Hello,%20I%20have%20a%20question%20about%20pharmacy..." class="footer-link" data-tooltip="Reach out to us!">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/lakhdar.kherachi"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

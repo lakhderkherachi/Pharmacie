@@ -1,0 +1,388 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background: #0f172a; /* Replace light background with dark */
+    color: #e6f4ea; /* Replace dark text with light */
+}
+
+body.dark-mode .navbar {
+    background: linear-gradient(90deg, #1e3a4f, #0f172a); /* Dark gradient for navbar */
+}
+
+body.dark-mode .nav-links ul li a {
+    color: #e6f4ea; /* Light text in dark mode */
+}
+
+body.dark-mode .nav-links ul li a:hover {
+    color: #34d399; /* Keep green on hover */
+}
+
+body.dark-mode .hamburger {
+    color: #e6f4ea; /* Light icon in dark mode */
+}
+
+/* Hero Section */
+body.dark-mode .hero {
+    background: linear-gradient(135deg, #1e3a4f, #0f172a); /* Dark gradient */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .cta-button {
+    background: #1e3a4f; /* Dark button background */
+    color: #34d399; /* Keep green text */
+}
+
+body.dark-mode .cta-button:hover {
+    box-shadow: 0 10px 20px rgba(52, 211, 153, 0.5); /* Green shadow */
+}
+
+body.dark-mode .hero-image {
+    box-shadow: 0 5px 15px rgba(52, 211, 153, 0.3); /* Green shadow */
+}
+
+/* About Section */
+body.dark-mode .about {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .about h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .about-text {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .stat-card {
+    background: #1e3a4f; /* Dark card background */
+}
+
+body.dark-mode .stat-card h3 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .stat-card p {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+/* Features Section */
+body.dark-mode .features {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .features h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .feature-card {
+    background: #1e3a4f; /* Dark card background */
+}
+
+body.dark-mode .feature-card h3 {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .feature-card p {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .feature-card i {
+    color: #34d399; /* Keep green */
+}
+
+/* How It Works Section */
+body.dark-mode .how-it-works {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .how-it-works h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .step-card {
+    background: #1e3a4f; /* Dark card background */
+}
+
+body.dark-mode .step-card h3 {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .step-card p {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .step-card i {
+    color: #34d399; /* Keep green */
+}
+
+/* Pricing Section */
+body.dark-mode .pricing {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .pricing h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .pricing-card {
+    background: #1e3a4f; /* Dark card background */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .pricing-card.recommended {
+    background: linear-gradient(135deg, #34d399, #10b981); /* Keep green gradient */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .pricing-card ul li {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .plan-button {
+    background: #34d399; /* Keep green */
+}
+
+body.dark-mode .recommended .plan-button {
+    background: #1e3a4f; /* Dark button background */
+    color: #34d399; /* Keep green text */
+}
+
+body.dark-mode .recommended .plan-button:hover {
+    background: #2a4b6e; /* Slightly lighter dark shade */
+}
+
+/* Subscription Modal */
+body.dark-mode .modal {
+    background: rgba(0, 0, 0, 0.8); /* Darker overlay */
+}
+
+body.dark-mode .modal-content {
+    background: #1e3a4f; /* Dark modal background */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .modal-content h3 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .modal-content label {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .modal-content input {
+    border: 1px solid #b3c9c1; /* Replace gray with lighter shade */
+    background: #0f172a; /* Dark input background */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .close-button {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .close-button:hover {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .form-button {
+    background: #34d399; /* Keep green */
+}
+
+/* Auth Section */
+body.dark-mode .auth-section {
+    background: linear-gradient(135deg, #0f172a, #1e3a4f); /* Dark gradient */
+}
+
+body.dark-mode .auth-container {
+    background: #1e3a4f; /* Dark background */
+}
+
+body.dark-mode .auth-section h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .auth-subtitle {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .auth-section label {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .auth-section input {
+    border: 1px solid #b3c9c1; /* Replace gray with lighter shade */
+    background: #0f172a; /* Dark input background */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .auth-link a {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .forgot-password {
+    color: #34d399; /* Keep green */
+}
+
+/* Testimonials Section */
+body.dark-mode .testimonials {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .testimonials h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .testimonial-card {
+    background: #1e3a4f; /* Dark card background */
+}
+
+body.dark-mode .testimonial-card p {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .testimonial-card span {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+/* FAQ Section */
+body.dark-mode .faq {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .faq h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .faq-item {
+    background: #1e3a4f; /* Dark card background */
+}
+
+body.dark-mode .faq-item h3 {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .faq-item p {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+/* FAQ Trigger Section */
+body.dark-mode .faq-trigger {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .faq-button {
+    background: #34d399; /* Keep green */
+    color: #0f172a; /* Dark text for contrast */
+}
+
+/* FAQ Modal */
+body.dark-mode .modal-content {
+    background: #1e3a4f; /* Dark modal background */
+}
+
+body.dark-mode .modal-title {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .faq-items .faq-item {
+    background: #2a4b6e; /* Slightly lighter dark shade */
+}
+
+body.dark-mode .faq-question {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .faq-answer {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+/* Terms and Privacy Modals */
+body.dark-mode .modal-text {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .modal-text strong {
+    color: #e6f4ea; /* Light text */
+}
+
+/* Contact Section */
+body.dark-mode .contact {
+    background: #0f172a; /* Dark background */
+}
+
+body.dark-mode .contact h2 {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .contact p {
+    color: #b3c9c1; /* Replace gray with lighter shade */
+}
+
+body.dark-mode .contact-info p {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .contact-info i {
+    color: #34d399; /* Keep green */
+}
+
+/* Footer */
+body.dark-mode footer {
+    background: #1e3a4f; /* Dark background */
+}
+
+body.dark-mode .footer-links a {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .footer-links a:hover {
+    color: #34d399; /* Keep green */
+}
+
+body.dark-mode .social-icons a {
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .social-icons a:hover {
+    color: #34d399; /* Keep green */
+}
+
+/* Tooltip Styling for Footer Links (Fix for Dark Mode) */
+body.dark-mode .footer-link[data-tooltip]::after {
+    background: linear-gradient(90deg, #2a4b6e, #1e3a4f); /* Dark gradient */
+    color: #e6f4ea; /* Light text */
+}
+
+body.dark-mode .footer-link[data-tooltip]::before {
+    border-top-color: #2a4b6e; /* Match dark gradient */
+}
+body.dark-mode .theme-toggle {
+    color: #e6f4ea; /* Light icon in dark mode */
+}
+/* Dark Mode Adjustments */
+body.dark-mode .dashboard {
+    background: #0f172a;
+}
+
+body.dark-mode .dashboard h1 {
+    color: #34d399;
+}
+
+body.dark-mode .dashboard-card {
+    background: #1e3a4f;
+}
+
+body.dark-mode .dashboard-card h3 {
+    color: #e6f4ea;
+}
+
+body.dark-mode .dashboard-card p {
+    color: #b3c9c1;
+}
+
+body.dark-mode .highlight {
+    color: #34d399;
+}
+
+body.dark-mode .dashboard-button {
+    background: #34d399;
+    color: #0f172a;
+}

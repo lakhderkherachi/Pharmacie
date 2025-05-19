@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.ico">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/darkmode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+         <a href="index.html"><div class="logo">
+          <img src="./img/header.ico" alt="Website Logo" class="logo-image">Pharmacy
+        </div></a>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="download.html">Download</a></li>     
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Dashboard Section -->
+    <section class="dashboard">
+        <h1>Pharmacy Dashboard</h1>
+        <div class="dashboard-grid">
+            <!-- Inventory Overview -->
+            <div class="dashboard-card">
+                <h3><i class="fas fa-boxes"></i> Inventory Overview</h3>
+                <p>Total Items: <span class="highlight">245</span></p>
+                <p>Low Stock Alerts: <span class="alert">5</span></p>
+                <p>Expiring Soon: <span class="alert">3</span></p>
+                <button class="dashboard-button">Manage Inventory</button>
+            </div>
+            <!-- Sales Tracking -->
+            <div class="dashboard-card">
+                <h3><i class="fas fa-dollar-sign"></i> Sales Tracking</h3>
+                <p>Today’s Revenue: <span class="highlight">$1,250.00</span></p>
+                <p>Transactions: <span class="highlight">12</span></p>
+                <p>Top Seller: <span>Paracetamol</span></p>
+                <button class="dashboard-button">View Sales Report</button>
+            </div>
+            <!-- Order Management -->
+            <div class="dashboard-card">
+                <h3><i class="fas fa-clipboard-list"></i> Order Management</h3>
+                <p>Pending Prescriptions: <span class="highlight">3</span></p>
+                <p>In Progress: <span class="highlight">2</span></p>
+                <p>Completed Today: <span class="highlight">15</span></p>
+                <button class="dashboard-button">Process Orders</button>
+            </div>
+            <!-- Analytics (Placeholder for Chart) -->
+            <div class="dashboard-card analytics-card">
+                <h3><i class="fas fa-chart-line"></i> Sales Analytics</h3>
+                <div class="chart-placeholder">
+                    <img src="https://via.placeholder.com/300x150?text=Sales+Trend+Chart" alt="Sales Trend Chart">
+                </div>
+                <p>Monthly Growth: <span class="highlight">8%</span></p>
+                <button class="dashboard-button">View Detailed Analytics</button>
+            </div>
+        </div>
+    </section>
+
+      <!-- Terms of Service Modal -->
+      <div id="terms-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeTermsModal()">×</span>
+            <h2 class="modal-title">Terms of Service</h2>
+            <div class="modal-text">
+                <p>Welcome to pharmacy! By using our services, you agree to comply with the following terms:</p>
+                <ul>
+                    <li><strong>Use of Service:</strong> You must use pharmacy for lawful purposes only.</li>
+                    <li><strong>Account Responsibility:</strong> You are responsible for maintaining the confidentiality of your account.</li>
+                    <li><strong>Termination:</strong> We reserve the right to terminate your access if you violate these terms.</li>
+                    <li><strong>Liability:</strong> pharmacy is not liable for any damages resulting from the use of our services.</li>
+                </ul>
+                <p>Last updated: May 6, 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Privacy Policy Modal -->
+    <div id="privacy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closePrivacyModal()">×</span>
+            <h2 class="modal-title">Privacy Policy</h2>
+            <div class="modal-text">
+                <p>At pharmacy, we value your privacy. Here's how we handle your data:</p>
+                <ul>
+                    <li><strong>Data Collection:</strong> We collect your email, name, and usage data to provide our services.</li>
+                    <li><strong>Data Use:</strong> Your data is used to improve our services and communicate with you.</li>
+                    <li><strong>Data Sharing:</strong> We do not share your data with third parties except as required by law.</li>
+                    <li><strong>Security:</strong> We use encryption to protect your data from unauthorized access.</li>
+                </ul>
+                <p>Last updated: May 6, 2025</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 pharmacy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#" onclick="showPrivacyModal()" class="footer-link" data-tooltip="Learn how we protect your data!">Privacy Policy</a>
+            <a href="#" onclick="showTermsModal()" class="footer-link" data-tooltip="Understand our rules!">Terms of Service</a>
+            <a href="mailto:l-kherachi@univ-dbkm.dz?subject=Contact%20Us%20-%20pharmacy&body=Hello,%20I%20have%20a%20question%20about%20pharmacy..." class="footer-link" data-tooltip="Reach out to us!">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com/lakhdar.kherachi"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
